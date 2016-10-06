@@ -9,4 +9,28 @@
 import UIKit
 
 class AnimalViewController: UIViewController {
+    
+    @IBOutlet weak var animalLabel: UILabel!
+    @IBOutlet weak var animalEmoji: UILabel!
+    
+    
+    var animal: String!
+    var emoji: String!
+ 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+ //       animal
+    }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        animalLabel.text = animal
+        animalEmoji.text = emoji
+        self.navigationItem.title = animal
+    }
+
 }
+
